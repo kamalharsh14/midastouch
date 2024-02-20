@@ -1,0 +1,19 @@
+.logo{
+    width: 120px;
+    height: 120px;
+}
+
+.info-left{
+    text-align: left;
+}
+
+.info-right{
+    font-size: medium;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: right;
+}
+
+.midastouch{
+    width: 187.86px;
+    height: 154px;
+}
