@@ -32,10 +32,10 @@ function App() {
       {key: 'Airline', value: 'Luftansa'}
     ],
     fadata1 : [
-      {key: 'Total Fare', value:''}
+      {key: 'Total Fare'}
     ],
     fadata2 : [
-      {key: 'Rs.12000', value:''}
+      {key: 'Rs.12000'}
     ]
   }
   return (

@@ -7,7 +7,7 @@ function FareCard(props) {
     const col2data = props.col2data
   return (
     <div className="container mt-4 mb-5">
-        <Heading title="Booking Details"/>
+        <Heading title={props.heading}/>
         <div className="container border mt-3 mb-3">
             <div className="row">
                 <div className="col text-left">
