@@ -9,7 +9,9 @@ function Card(props) {
     <div className="container mt-4 mb-5">
         <Heading title = {heading} />
         <div className="container border mt-3 mb-3">
-            <TitleCard data = {data} />  
+          {data.map(item =>(
+            <TitleCard data = {item} />  
+          ))}
         </div>
     </div>
   )

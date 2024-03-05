@@ -7,7 +7,7 @@ function TitleCard(props) {
     <>
       <div className="row text-center">
           {data.map(item =>(
-              <Tile title = {item.key} className="col border text-white bg-dark"/>
+              <Tile title = {item.key} className="col border text-white bg-dark small pt-2"/>
           ))}
       </div>
       <div className="row text-center">

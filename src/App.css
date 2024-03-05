@@ -8,6 +8,7 @@
 }
 
 .info-right{
+    margin-top: 25px;
     font-size: medium;
     font-family: 'Times New Roman', Times, serif;
     text-align: right;
@@ -16,4 +17,8 @@
 .midastouch{
     width: 187.86px;
     height: 154px;
+}
+
+.email{
+    margin-top: -10px;
 }
