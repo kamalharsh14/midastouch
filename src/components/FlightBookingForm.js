@@ -78,8 +78,8 @@ function FlightBookingForm({onSubmit}) {
   };
 
   const handleSubmit = () => {
-    console.log("Flight Booking Data:");
-    console.log(JSON.stringify(bookingData, null, 2));
+    // console.log("Flight Booking Data:");
+    // console.log(JSON.stringify(bookingData, null, 2));
     onSubmit(bookingData);
   };
 

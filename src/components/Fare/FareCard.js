@@ -4,11 +4,11 @@ import FareDataCard from './FareDataCard'
 
 function FareCard(props) {
     const data = props.data[0][0];
-    console.log(data)
+    // console.log(data)
     const col1data = data.key
     const col2data = data.value
-    console.log(col1data)
-    console.log(col2data)
+    // console.log(col1data)
+    // console.log(col2data)
   return (
     <div className="container mt-4 mb-5">
         <Heading title={props.heading}/>

@@ -5,25 +5,14 @@ import BookingCard from './components/Booking/BookingCard';
 import Card from './components/Cards/Card';
 import FareCard from './components/Fare/FareCard';
 import Terms from './components/Terms';
+import Passenger from './components/Passenger/Passenger';
 import html2pdf from 'html2pdf.js';
 
 function Ticket({ formData, onBack }) {
   const handleBack = () => {
     onBack(formData); // Pass formData back to the parent component
-    console.log(formData);
+    // console.log(formData);
   };
-
-  // const handlePrintAndSave = () => {
-  //   const ticketDiv = document.getElementById('ticket');
-  //   const options = {
-  //     filename: 'ticket.pdf',
-  //     image: { type: 'jpeg', quality: 0.98 },
-  //     html2canvas: { scale: 2 },
-  //     jsPDF: { unit: 'cm', format: 'a4', orientation: 'portrait', compressPDF: true }
-  //   };
-
-  //   html2pdf().from(ticketDiv).set(options).save();
-  // };
 
   const handlePrintAndSave = () => {
     const ticketDiv = document.getElementById('ticket');
@@ -54,7 +43,8 @@ function Ticket({ formData, onBack }) {
         <Info />
         <BookingCard col1data={formData.bdata1[0]} col2data={formData.bdata2[0]} />
         <Card heading='Flight Details' data={formData.fdata} />
-        <Card heading='Passenger Details' data={formData.pdata} />
+        {/* <Card heading='Passenger Details' data={formData.pdata} /> */}
+        <Passenger heading = 'Passenger Details' data={formData.pdata}/>
         <FareCard heading='Fare Detailss' data={formData.fadata}/>
         <Terms />
       </div>
